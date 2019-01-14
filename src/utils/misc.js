@@ -1,0 +1,1 @@
+export const API_URL = 'https://api.cuatrokb.com/v1/empleado/jobs.json';

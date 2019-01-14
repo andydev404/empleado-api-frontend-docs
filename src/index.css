@@ -1,0 +1,171 @@
+
+
+/*********************************
+/* General Config
+*********************************/
+
+body {
+  background: #f3f8ff;
+  color: #4B4C7C;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: rgb(128, 128, 240);
+}
+
+a:hover {
+  color: #4B4C7C;
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+.api-info,
+.job-list {
+  margin-top: 50px;
+}
+
+.api-info .list-group-item,
+.endpoint {
+  word-break: break-all;
+}
+
+.list-group-item.active {
+  background-color: #8686FA;
+  border-color: #8686FA;
+}
+
+.api-info .list-group-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*********************************
+/* API Form
+*********************************/
+.btn-try,
+.btn-fill {
+  border: none;
+  background: #F2686A;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 1.2rem;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+
+.btn-try:hover {
+  background: rgb(199, 87, 89);
+}
+
+.btn-fill {
+  background: #4B4C7C;
+}
+
+.btn-fill:hover {
+  background: rgb(51, 52, 83);
+}
+
+.endpoint {
+  background: #4B4C7C;
+  color: #fff;
+  border-radius: .25rem;
+  text-align: center;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+/*********************************
+/* Job List
+*********************************/
+.job-list .card-header {
+  background-color: #4B4C7C;
+  border-bottom: 1px solid #4B4C7C;
+  color: #fff;
+}
+
+/*********************************
+/* Shape
+*********************************/
+.shape1,
+.shape2,
+.shape3 {
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  width: 200px;
+  opacity: .2;
+  z-index: -1;
+}
+
+.shape2 {
+  left: -50px;
+  top: 0;
+  width: 300px;
+}
+
+.shape3 {
+  left: 50%;
+  bottom: 0;
+  width: 300px;
+}
+
+/*********************************
+/* Footer
+*********************************/
+footer {
+  border-radius: .25rem;
+  padding: 20px;
+  text-align: center;
+  background: #f3f8ff;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer i {
+  animation: heartbeat 1.6s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(.75);
+  }
+
+  20% {
+    transform: scale(1);
+  }
+
+  40% {
+    transform: scale(.75);
+  }
+
+  60% {
+    transform: scale(1);
+  }
+
+  80% {
+    transform: scale(.75);
+  }
+
+  100% {
+    transform: scale(.75);
+  }
+}
+
+/*********************************
+/* Medias Queries
+*********************************/
+@media (max-width:768px) {
+
+  .shape1,
+  .shape3 {
+    display: none;
+  }
+}
